@@ -11,10 +11,10 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ api, event }) => {
-  const imgPath = __dirname + "/cache/meme.jpg"; // এখানে আপনার ছবিটি রাখুন
+  const imgPath = __dirname + "/cache/meme.jpg"; //https://i.imgur.com/zCFuB2S.jpeg
 
   if (!fs.existsSync(imgPath))
-    return api.sendMessage("https://i.imgur.com/zCFuB2S.jpeg", event.threadID);
+    return api.sendMessage("❌ meme.jpg পাওয়া যায়নি!", event.threadID);
 
   api.sendMessage(
     {
