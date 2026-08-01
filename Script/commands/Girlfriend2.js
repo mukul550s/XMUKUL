@@ -122,4 +122,4 @@ module.exports.run = async function ({ api, event, args }) {
   } catch (error) {
     return api.sendMessage(`⚠️ ${error.message}`, event.threadID);
   }
-};
+};gir
